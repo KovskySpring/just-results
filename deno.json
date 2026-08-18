@@ -1,0 +1,30 @@
+{
+  "name": "@kovskyspring/just-results",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Nhan Nguyen",
+  "description": "A dead simple result type for Typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KovskySpring/just-results.git"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./pipes": "./src/pipes/index.ts"
+  },
+  "bugs": "https://github.com/KovskySpring/just-results/issues",
+  "tasks": {
+    "test": "deno test"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "publish": {
+    "include": ["LICENSE", "README.md", "deno.json", "src/**/*"],
+    "exclude": [
+      "src/**/*_test.ts",
+      "src/**/*.test.ts",
+      "src/**/*.testutil.ts"
+    ]
+  }
+}
